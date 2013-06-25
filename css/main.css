@@ -1,0 +1,254 @@
+/*
+    Description:  main styles
+    Date:         06.04.2013 16:00
+*/
+
+
+/***************************************************
+    default Styles and fixes for Template
+***************************************************/
+
+#container {
+    min-height: 500px;
+}
+
+/* Sidenav for Docs
+-------------------------------------------------- */
+
+.bs-docs-sidenav {
+  width: 200px;
+  margin: 30px 0 0;
+  padding: 0;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+          box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.bs-docs-sidenav > li > a {
+  display: block;
+  width: 190px \9;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border: 1px solid #e5e5e5;
+}
+.bs-docs-sidenav > li:first-child > a {
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+.bs-docs-sidenav > li:last-child > a {
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+}
+.bs-docs-sidenav > .active > a {
+  position: relative;
+  z-index: 2;
+  padding: 9px 15px;
+  border: 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+     -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+          box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+/* Chevrons */
+.bs-docs-sidenav .icon-chevron-right {
+  float: right;
+  margin-top: 2px;
+  margin-right: -6px;
+  opacity: .25;
+}
+.bs-docs-sidenav > li > a:hover {
+  background-color: #f5f5f5;
+}
+.bs-docs-sidenav a:hover .icon-chevron-right {
+  opacity: .5;
+}
+.bs-docs-sidenav .active .icon-chevron-right,
+.bs-docs-sidenav .active a:hover .icon-chevron-right {
+  background-image: url(../img/glyphicons-halflings-white.png);
+  opacity: 1;
+}
+.bs-docs-sidenav.affix {
+  top: 0px;
+}
+
+.bs-docs-sidenav.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 270px;
+}
+
+
+
+/***************************************************
+    Project start
+***************************************************/
+.title-page-separate {
+    margin-bottom:40px
+}
+
+.boxed>div {
+    padding:10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -moz-box-sizing: padding-box;
+    -webkit-box-sizing:border-box;
+
+
+}
+.boxed-gray {
+    background:#f2f2f2;
+}
+
+.boxed .title {
+    margin-left:25px;
+}
+
+body {
+    counter-reset: h4_counter;
+}
+.boxed .title h4 {
+    position: relative;
+    counter-increment: h4_counter;
+    color:#333;
+    font-size:16px;
+}
+.boxed .title  h4:before {
+    background: none repeat scroll 0 0 #fff;
+    border: 2px solid #333;
+    border-radius: 999px 999px 999px 999px;
+    color: #333;
+    content: counter(h4_counter, decimal);
+    font-size: 14px;
+    font-weight: bold;
+    height: 13px;
+    left: -28px;
+    line-height: 14px;
+    padding:2px 2px 2px 3px;
+    position: absolute;
+    text-align: center;
+    width: 13px;
+}
+
+.boxed .share-buttons {
+    margin-left:20px;
+}
+/*
+    share buttons
+*/
+
+.share {
+    background: rgba(0,0,0,.1);
+    border-radius: 4px;
+    color: #333;
+    box-shadow:0 1px 5px rgba(0,0,0,.3) inset;
+    font-weight: normal;
+    display:block;
+    border:1px solid #ddd;
+}
+.share:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.share>i {
+    font-size: 20px;
+    padding: 5px 5px 4px;
+    border-radius: 4px 0 0 4px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    background-image:none;
+    line-height: 20px;
+    height:auto;
+    margin:0;
+    vertical-align: 0;
+    border-right: 1px solid rgba(0,0,0,.1);
+
+}
+
+.share>.icon-angle-left {
+    padding-right:0;
+    border:none;
+}
+.share>.icon-angle-right {
+    padding-left:0;
+}
+.share>.icon-angle-left,.share>.icon-angle-right {
+    width: 11px;
+}
+
+.share>span {
+    display: inline-block;
+    padding: 5px 7px 4px 7px;
+    float: right;
+    border-left: 1px solid rgba(0,0,0,.1);
+}
+
+
+i[class^="icon-"]{
+    text-shadow: 1px 0px 1px rgba(0,0,0,.5);
+}
+i.icon-facebook {
+    color:#3B5998;
+}
+i.icon-twitter {
+    color:#00C0F7;
+}
+i.icon-pinterest {
+    color:#CE2020;
+}
+
+
+/* share buttons hover */
+.share:hover {
+    color:#fff;
+    box-shadow: 0 -10px 15px rgba(0,0,0,.2) inset;
+    transition: all 300ms linear;
+
+}
+.share:hover>span {
+    border-left: 1px solid rgba(255,255,255,.1);
+}
+.share:hover i[class^="icon-"] {
+    color:#fff;
+    text-shadow: none;
+    transition: all 300ms linear;
+}
+.share.facebook:hover {
+    background:#3B5998;;
+}
+.share.twitter:hover {
+    background:#00C0F7;
+}
+.share.pinterest:hover {
+    background:#CE2020;
+}
+.share.embed:hover {
+    background:#555;
+}
+
+
+.share:active {
+    transition: all 0ms linear;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3) inset;
+}
+
+/* ricardo links */
+
+a.ric-iconed {
+
+}
+
+a.ric-iconed [class^="icon-alt-"], a.ric-iconed [class*=" icon-alt-"] {
+    display:inline-block;
+    margin-top:-7px;
+}
+
+a.ric-iconed span {
+    padding: 5px 5px;
+    display: inline-block;
+}
