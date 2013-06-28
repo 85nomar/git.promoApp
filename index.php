@@ -5,10 +5,18 @@ $Layout->title = 'Sellingform';
 $Layout->start(); ?>
 
 <script>
+
     $(document).ready(function() {
 
+        //bootstrap tooltip
+        $(function () {
+            $("[rel='embeded-info']").tooltip();
+        });
+
+        //default share button
         var share = $('.share-buttons.promo .share');
 
+        //get fancybox iframe with promo
         share.each(function ShareButtons(){
 
             function PromoUrl(variant, itemID, context) {
@@ -46,7 +54,7 @@ $Layout->start(); ?>
             <p>...und wird zum vordefinierten Zeitpunkt veröffentlicht</p>
         </div>
         <div class="boxed row">
-            <div class="span6 boxed-gray">
+            <div class="span7 boxed-gray">
                 <div class="title">
                     <h4>Teilen Sie jetzt Ihre angebote mit ihren Freunden und steigern Sie Ihre Verkaufschancen.</h4>
                 </div>
@@ -54,12 +62,13 @@ $Layout->start(); ?>
                     <ul class="inline">
                         <li><a class="share facebook" href="#"><i class="icon-facebook"></i><span>Teilen</span></a></li>
                         <li><a class="share twitter" href="#"><i class="icon-twitter"></i><span>Tweet</span></a></li>
-                        <li><a class="share pinterest" href="#"><i class="icon-pinterest"></i><span>Pint it</span></a></li>
+                        <li><a class="share gplus" href="#"><i class="icon-google-plus"></i><span>Mitteilen</span></a></li>
                         <li><a class="share embed" href=""><i class="icon-angle-left"></i><i class="icon-angle-right"></i><span>Einbinden</span></a></li>
+                        <li><i class="embed-info icon-info-sign" rel="embeded-info"></i></li>
                     </ul>
                 </div>
             </div>
-            <div class="span6">
+            <div class="span5">
                 <div class="title">
                     <h4>Was möchten Sie als nächstes tun?</h4>
                     <div>

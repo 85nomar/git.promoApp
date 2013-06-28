@@ -105,7 +105,7 @@
 }
 
 .boxed .title {
-    margin-left:25px;
+    margin-left:35px;
 }
 
 body {
@@ -118,37 +118,37 @@ body {
     font-size:16px;
 }
 .boxed .title  h4:before {
-    background: none repeat scroll 0 0 #fff;
-    border: 2px solid #333;
-    border-radius: 999px 999px 999px 999px;
-    color: #333;
+    background: none repeat scroll 0 0 #1946A0;
+    border: 2px solid #1946A0;
+    border-radius: 4px;
+    color: #fff;
     content: counter(h4_counter, decimal);
     font-size: 14px;
     font-weight: bold;
     height: 13px;
-    left: -28px;
+    left: -31px;
     line-height: 14px;
-    padding:2px 2px 2px 3px;
+    padding:2px 2px 1px 1px;
     position: absolute;
     text-align: center;
     width: 13px;
 }
 
 .boxed .share-buttons {
-    margin-left:20px;
+    margin-left:30px;
 }
 /*
     share buttons
 */
 
 .share {
-    background: rgba(0,0,0,.1);
+    background: rgb(233, 233, 233);
     border-radius: 4px;
     color: #333;
-    box-shadow:0 1px 5px rgba(0,0,0,.3) inset;
+    box-shadow: 0 1px 3px rgba(153, 153, 153, .3) inset;
     font-weight: normal;
-    display:block;
-    border:1px solid #ddd;
+    display: block;
+    border: 1px solid #ddd;
 }
 .share:hover {
     text-decoration: none;
@@ -166,7 +166,6 @@ body {
     height:auto;
     margin:0;
     vertical-align: 0;
-    border-right: 1px solid rgba(0,0,0,.1);
 
 }
 
@@ -198,7 +197,7 @@ i.icon-facebook {
 i.icon-twitter {
     color:#00C0F7;
 }
-i.icon-pinterest {
+i.icon-google-plus {
     color:#CE2020;
 }
 
@@ -224,7 +223,7 @@ i.icon-pinterest {
 .share.twitter:hover {
     background:#00C0F7;
 }
-.share.pinterest:hover {
+.share.gplus:hover {
     background:#CE2020;
 }
 .share.embed:hover {
@@ -237,11 +236,12 @@ i.icon-pinterest {
     box-shadow: 0 5px 15px rgba(0,0,0,.3) inset;
 }
 
-/* ricardo links */
-
-a.ric-iconed {
-
+.share-buttons li i.embed-info {
+    font-size:18px;
+    float:left;
 }
+
+/* ricardo links */
 
 a.ric-iconed [class^="icon-alt-"], a.ric-iconed [class*=" icon-alt-"] {
     display:inline-block;
